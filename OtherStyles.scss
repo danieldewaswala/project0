@@ -1,0 +1,64 @@
+$color: red;
+
+%makeBolder{
+  font-weight: bolder;
+  font-family: serif;
+}
+
+h1{
+  text-align: center;
+  color: $color;
+}
+
+@media (max-width:800px) {
+  p{
+    font-size: 15px;
+  }
+  ol>li{
+    font-size: 15px;
+    color: $color;
+  }
+  ul li{
+    font-size: 15px;
+    color: green;
+  }
+}
+
+@media (min-width:801px) {
+  p{
+    font-size: 25px;
+  }
+  ol>li{
+    font-size: 25px;
+    color: $color;
+  }
+  ul li{
+    font-size: 25px;
+    color: green;
+  }
+}
+
+div{
+  p:hover{
+    @extend %makeBolder;
+    color: green;
+    font-size: 25px;
+  }
+  h1:hover{
+      @extend %makeBolder;
+  }
+  .col-4>p:hover{
+    @extend %makeBolder;
+    color: red;
+  }
+}
+
+.row>div{
+  padding:20px;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+a{
+  padding: 20px;
+}

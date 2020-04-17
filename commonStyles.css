@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
+  color: red;
+}
+
+h1{
+  border: 10px dotted blue;
+}
+
+#MainTitle::before{
+  content: "\1F431  ";
+  font-size: 50px;
+}
+
+.highlighted{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media (max-width:800px) {
+  p{
+    font-size: 15px;
+  }
+  ol>li{
+    font-size: 15px;
+    color: red;
+  }
+  ul li{
+    font-size: 15px;
+    color: green;
+  }
+}
+
+@media (min-width:801px) {
+  p{
+    font-size: 25px;
+  }
+  ol>li{
+    font-size: 25px;
+    color: red;
+  }
+  ul li{
+    font-size: 25px;
+    color: green;
+  }
+}
+
+.circle{
+  border-radius: 150%;
+  border: 2px solid Black;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
