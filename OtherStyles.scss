@@ -24,6 +24,25 @@ h1{
   }
 }
 
+button[type=button]{
+  width: 100px;
+  border-radius: 100px;
+  border: 2px solid grey;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 6px black;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 @media (min-width:801px) {
   p{
     font-size: 25px;
@@ -42,7 +61,6 @@ div{
   p:hover{
     @extend %makeBolder;
     color: green;
-    font-size: 25px;
   }
   h1:hover{
       @extend %makeBolder;
@@ -50,6 +68,9 @@ div{
   .col-4>p:hover{
     @extend %makeBolder;
     color: red;
+  }
+  ul li:hover{
+    @extend %makeBolder;
   }
 }
 

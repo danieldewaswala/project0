@@ -1,4 +1,4 @@
-div p:hover, div h1:hover, div .col-4 > p:hover {
+div p:hover, div h1:hover, div .col-4 > p:hover, div ul li:hover {
   font-weight: bolder;
   font-family: serif; }
 
@@ -17,6 +17,22 @@ h1 {
   ul li {
     font-size: 15px;
     color: green; } }
+button[type=button] {
+  width: 100px;
+  border-radius: 100px;
+  border: 2px solid grey;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 6px black; }
+
+button:hover {
+  background-color: grey;
+  color: white; }
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); }
+
 @media (min-width: 801px) {
   p {
     font-size: 25px; }
@@ -29,8 +45,7 @@ h1 {
     font-size: 25px;
     color: green; } }
 div p:hover {
-  color: green;
-  font-size: 25px; }
+  color: green; }
 div .col-4 > p:hover {
   color: red; }
 
